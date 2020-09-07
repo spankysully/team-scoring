@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <title>Arena Scoring - Placement Points Tutorial</title>
+</head>
+<body>
+    <main>
+        <div class="popup">
+            Click A DEVICE To View Settings
+            <br>
+            <br>
+            <p>Currently awards points to all alive team members, <br>can be modified to only give points to 1 alive member by using a trigger that can only trigger once!</p>
+            <br>
+            <span>Use Code: spankysully</span>
+        </div>
+        <div class="island-code">
+            Demo Island: <span>4150-2161-6915</span><br>
+            <a href="https://discord.gg/zws"><img height="24px" src="https://image.flaticon.com/icons/svg/2111/2111363.svg">Join Discord!</a>
+        </div>
+        <section id="settings0">
+            <h2>1 Per/Team Counting</h2>
+            <div id="zero_ch1" data-channel="one" class="TRIGGER">CH 99</div>
+            <div id="zero_ch2" data-channel="two" class="TRIGGER">CH 99</div>
+            <div id="zero_ch3" data-channel="three" class="TRIGGER">CH 99</div>
+            <div id="zero_ch4" data-channel="four" class="TRIGGER">CH 99</div>
+            <div id="zero_ch5" data-channel="five" class="TRIGGER">CH 99</div>
+            <div id="zero_ch6" data-channel="six" class="TRIGGER">CH 99</div>
+            <div id="zero_ch7" data-channel="seven" class="TRIGGER">CH 99</div>
+            <div id="zero_ch8" data-channel="eight" class="TRIGGER">CH 99</div>
+        </section>
+
+        <section id="settings1">
+            <h2>Team Counting</h2>
+            <div id="one_ch2" data-channel="two" class="TRIGGER">CH 02</div>
+            <div id="one_ch3" data-channel="three" class="TRIGGER">CH 03</div>
+            <div id="one_ch4" data-channel="four" class="TRIGGER">CH 04</div>
+            <div id="one_ch5" data-channel="five" class="TRIGGER">CH 05</div>
+            <div id="one_ch6" data-channel="six" class="TRIGGER">CH 06</div>
+            <div id="one_ch7" data-channel="seven" class="TRIGGER">CH 07</div>
+            <div id="one_ch8" data-channel="eight" class="TRIGGER">CH 08</div>
+            <div></div>
+            <div id="once_ch17" data-channel="nine" class="TEAM-SETTINGS"></div>
+            <div id="once_ch17" data-channel="ten" class="TEAM-SETTINGS"></div>
+            <div id="once_ch17" data-channel="eleven" class="TEAM-SETTINGS"></div>
+            <div id="once_ch17" data-channel="twelve" class="TEAM-SETTINGS"></div>
+            <div id="once_ch17" data-channel="thirteen" class="TEAM-SETTINGS"></div>
+            <div id="once_ch17" data-channel="fourteen" class="TEAM-SETTINGS"></div>
+            <div id="once_ch17" data-channel="fiveteen" class="TEAM-SETTINGS"></div>
+            <div id="once_ch17" data-channel="sixteen" class="TEAM-SETTINGS"></div>
+        </section>
+
+        <section id="settings2">
+            <h2>Victory Royale (Last Team Standing)</h2>
+            <div id="two_ch2" data-channel="two"  class="TRIGGER">CH 09</div>
+            <div id="two_ch3" data-channel="three" class="TRIGGER">CH 09</div>
+            <div id="two_ch4" data-channel="four" class="TRIGGER">CH 09</div>
+            <div id="two_ch5" data-channel="five" class="TRIGGER">CH 09</div>
+            <div id="two_ch6" data-channel="six" class="TRIGGER">CH 09</div>
+            <div id="two_ch7" data-channel="seven" class="TRIGGER">CH 09</div>
+            <div id="two_ch8" data-channel="eight" class="TRIGGER">CH 09</div>
+            <div id="two_ch17" data-channel="seventeen" class="MUTATOR-ZONE"></div>
+            <div id="two_ch18" data-channel="eighteen" class="SCORE-MANAGER"></div>
+            <!-- <div id="two_ch19" data-channel="nineteen" class="HUD-MESSAGE-DEVICE"></div> -->
+            <div id="two_ch29" data-channel="twenty" class="TRIGGER">CH 16</div>
+            <div id="two_ch230" data-channel="twentyone" class="TEAM-SETTINGS"></div>
+        </section>
+
+        <section id="settings3">
+            <h2>Top 5</h2>
+            <div id="three_ch6" data-channel="six" class="TRIGGER">CH 10</div>
+            <div id="three_ch7" data-channel="seven" class="TRIGGER">CH 10</div>
+            <div id="three_ch8" data-channel="eight" class="TRIGGER">CH 10</div>
+            <div id="three_ch17" data-channel="seventeen" class="MUTATOR-ZONE"></div>
+            <div id="three_ch18" data-channel="eighteen" class="SCORE-MANAGER"></div>
+            <div id="three_ch19" data-channel="nineteen" class="HUD-MESSAGE-DEVICE"></div>
+            <div id="three_ch29" data-channel="twenty" class="TRIGGER">CH 14</div>
+        </section>
+
+        <section id="settings4">
+            <h2>Top 3</h2>
+            <div id="four_ch4" data-channel="four" class="TRIGGER">CH 11</div>
+            <div id="four_ch5" data-channel="five" class="TRIGGER">CH 11</div>
+            <div id="four_ch6" data-channel="six" class="TRIGGER">CH 11</div>
+            <div id="four_ch7" data-channel="seven" class="TRIGGER">CH 11</div>
+            <div id="four_ch8" data-channel="eight" class="TRIGGER">CH 11</div>
+            <div id="four_ch17" data-channel="seventeen" class="MUTATOR-ZONE"></div>
+            <div id="four_ch18" data-channel="eighteen" class="SCORE-MANAGER"></div>
+            <div id="four_ch19" data-channel="nineteen" class="HUD-MESSAGE-DEVICE"></div>
+            <div id="four_ch29" data-channel="twenty" class="TRIGGER">CH 14</div>
+        </section>
+        <section class="settings">
+            <h2>Game Settings</h2>
+            <h3>Elimination Score: 1</h3>
+            <h3>Spawn Limit : 1</h3>
+            <h3>Last Standing Ends Game : OFF</h3>
+        </section>
+        <section class="settings">
+            <h2>UI Settings</h2>
+            <h3>Scoreboard Win Condidtion: Score</h3>
+            <h3>HUD Info Type : Score</h3>
+            <h3>Map Screen Display : Scoreboard</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+        
+    </main>
+    <aside>
+        <header>
+            <h2>CUSTOMIZE</h2>
+            <h3 id="deviceType">TRIGGER</h3>
+        </header>
+        <ul>
+            <li>Select A DEVICE To View Settings</li>
+        </ul>
+        
+    </aside>
+ 
+</body>
+</html>
